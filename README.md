@@ -5,7 +5,7 @@ A lightweight, ephemeral, and hardened environment for downloading and scanning 
 This tool uses **Docker** to create a disposable "jail." It downloads a file, scans it with **ClamAV** and **Yara**, and only lets you keep the file if it passes all security checks. If a threat is detected, the container (and the file) is instantly destroyed.
 
 > [!WARNING]
-> I am not a security expert. I made this tool to create a lightweight alternative to dedicated sandbox to use on light hardware for day-to-day usage. If you or your work are too important. Please resort to specialized tooling :)
+> I am not a security expert. I made this tool to create a lightweight alternative to dedicated sandbox to use on light and easy-to-use alternative. If you or your work are too important. Please resort to specialized sandbox solutions :)
 
 > [!NOTE]
 > If you are using this tool on Linux, I recommend using [gVisor](https://gvisor.dev/) and the `--runtime=runsc` to the `scan` command to prevent possible kernel escape to your own host. MacOS and Windows users already benefit from the linux VM as added security
